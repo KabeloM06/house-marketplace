@@ -1,4 +1,4 @@
-import {Router, Routes, Route} from 'react-router-dom';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 import Explore from './pages/Explore';
 import Offers from './pages/Offers';
@@ -10,7 +10,7 @@ import ForgotPassword from './pages/ForgotPassword';
 function App() {
   return (
     <>
-      <Router>
+      <BrowserRouter>
         <Routes>
           <Route path='/' element={<Explore/>}/>
           <Route path='/offers' element={<Offers />}/>
@@ -19,7 +19,7 @@ function App() {
           <Route path='/sign-up' element={<SignUp/>}/>
           <Route path='/forgot-password' element={<ForgotPassword/>}/>
         </Routes>
-      </Router>
+      </BrowserRouter>
       
     </>
   );
